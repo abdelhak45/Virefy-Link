@@ -1,11 +1,13 @@
 let inputUrl = document.getElementById("inputUrl")
 let virify = document.getElementById("virify")
 let solition = document.getElementById("solition")
+let reload = document.getElementById("reload")
 let safe = document.querySelector('.safe')
 
 // console.log(inputUrl,virify,solition);
 
 virify.onclick = () => {
+    reload.style.display = "block"
     setTimeout(()=>{
         if (inputUrl.value == "") {
             preventDefault()
